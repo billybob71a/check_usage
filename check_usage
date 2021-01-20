@@ -1,0 +1,5 @@
+#!/bin/bash
+
+OUTPUT=$(df --total | grep "total" | awk '{print $5}' 2>&1 )
+echo $OUTPUT
+echo $OUTPUT | mail -s "disk usage on ${HOSTNAME}" <phone number>@<carrier sms gateway email address>
