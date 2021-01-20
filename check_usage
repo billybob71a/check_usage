@@ -5,6 +5,6 @@ echo $OUTPUT
 echo $OUTPUT | mail -s "disk usage on ${HOSTNAME}" <phone number>@<carrier sms gateway email address>
 
 
-The output will be like
+The output on the SMS text will be like:
 Subj: disk suage on cam1
 <some number>%
